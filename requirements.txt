@@ -1,0 +1,5 @@
+# Telegram Bot dependencies
+python-telegram-bot==20.7
+
+# No external dependencies required for rules_search.py - uses only Python standard library
+# Python 3.6+ required for type hints and f-strings

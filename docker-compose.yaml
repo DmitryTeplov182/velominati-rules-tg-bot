@@ -1,0 +1,10 @@
+services:
+  cycling-rules-bot:
+    build: .
+    container_name: cycling-rules-bot
+    restart: unless-stopped
+    environment:
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+    volumes:
+      - ./data:/app/data
+    user: "1000:1000"
